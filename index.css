@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+
+#delete{
+    margin: 1rem 0 0 1rem;
+}
+
+/* modal */
+.modal{
+    background-color: rgba(0,0,0,0.7);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.is-visible{
+    visibility: visible;
+    animation: fade 0.5s ease; 
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.modal-container{
+    max-width: 90vw; 
+}   
+
+section{
+    padding: 2rem 1rem;
+}
+
+header, footer{
+    padding: 1rem;
+}
+
+.modal-header{
+    background-color: gray;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-content{
+    background-color: #fff;
+    font-size: 1.6rem;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: gray;
+    border-radius: 0 0 10px 10px;
+}
+
+#modal-btn-delete, #modal-btn-cancle{
+    background-color: darkgray;
+    margin: 0 7px;
+}
+
+#modal-btn-delete:hover, #modal-btn-cancle:hover{
+    font-weight: bold;
+}
+
+#modal-btn-delete{
+    background-color: tomato;
+}
