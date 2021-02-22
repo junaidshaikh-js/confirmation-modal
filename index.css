@@ -1,3 +1,4 @@
+/* css reset */
 *{
     margin: 0;
     padding: 0;
@@ -34,15 +35,6 @@
 .is-visible{
     visibility: visible;
     animation: fade 0.5s ease; 
-}
-
-@keyframes fade{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }
 
 .modal-container{
@@ -85,4 +77,29 @@ header, footer{
 
 #modal-btn-delete{
     background-color: tomato;
+}
+
+/* attribution */
+.attribution{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -100px;
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.attribution a:hover{
+    text-decoration: none;
+} 
+
+/* animations */
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
